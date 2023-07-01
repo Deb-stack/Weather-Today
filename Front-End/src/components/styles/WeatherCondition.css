@@ -1,0 +1,123 @@
+.weather-condition-wrapper {
+  height: 97%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-shadow: 5px 5px 30px #000000a1;
+  box-shadow: 5px 5px 30px black;
+  background-color: #004d7466;
+  border-radius: 20px;
+  margin-top: 1rem;
+  padding: 2rem;
+  color: white;
+}
+
+.heading-wrapper {
+  text-align: left;
+}
+
+.temp-wrapper {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.temp-wrapper div:first-child {
+  position: relative;
+}
+
+/* Weather Description */
+.temp-wrapper div:first-child span {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 100%;
+  font-weight: 1000;
+  letter-spacing: 0.08rem;
+}
+
+.show-temp {
+  text-align: left;
+  font-size: 4em;
+}
+@media screen and (min-width: 1536px) {
+  .show-temp {
+    font-size: 5em;
+  }
+}
+
+.temp-wrapper img {
+  width: 160px;
+  height: 160px;
+}
+
+.weather-description-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+.weather-description-feel-like-wrapper {
+  background-color: #004d749b;
+  text-align: left;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.feels-like-heading {
+  margin-bottom: 20px;
+}
+
+.feel-like-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+.feel-like-description div:first-child {
+  width: 80%;
+}
+
+.temp-high-low {
+  background-color: #004d749b;
+  border: 1px solid white;
+  border-radius: 20px;
+  margin-bottom: 4%;
+  padding: 20px 0;
+  width: 100%;
+}
